@@ -6,7 +6,7 @@ export default function Home() {
       <title>Ig.news</title>
     </Head>
 
-    <div>
+    <div> 
       <h1>Hello World</h1>
     </div>
   </>
