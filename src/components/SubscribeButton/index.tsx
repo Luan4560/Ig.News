@@ -1,14 +1,11 @@
-import { useSession, signIn } from 'next-auth/client';
+import { signIn, useSession } from 'next-auth/client';
 import { useRouter } from 'next/router';
+
 import { api } from '../../services/api';
 import { getStripeJs } from '../../services/stripejs';
 import styles from './styles.module.scss';
 
-interface SubscribeButonProps {
-  priceId: string
-}
-
-export function SubscribeButton ({priceId}: SubscribeButonProps) {
+export function SubscribeButton () {
   const [session] = useSession()
   const router = useRouter()
 
